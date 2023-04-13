@@ -14,7 +14,11 @@ namespace CheburashkaApp
         }
         public static bool CheckInServer(string login,string password)
         {
-            return true;    //надо сделать
+            if (login == "localhost" && password == "12345")
+            {
+                return true;
+            }//надо сделать
+            else return false;
         }
     }
 }

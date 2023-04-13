@@ -1,3 +1,5 @@
+using System.Xml;
+
 namespace CheburashkaApp;
 
 public partial class LoginPage : ContentPage
@@ -13,6 +15,10 @@ public partial class LoginPage : ContentPage
         if (CheckLogin.CheckInServer(loginEntry.Text, passwordEntry.Text))
         {
             Navigation.PopAsync();
+        }
+        else
+        {
+            incorrectInputLabel.Text = "Неверный логин или пароль";
         }
     }
     protected override bool OnBackButtonPressed()

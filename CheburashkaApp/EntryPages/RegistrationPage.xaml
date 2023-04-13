@@ -16,24 +16,22 @@
                 HorizontalOptions="Start"
                 Padding="0,20"/>
             <Label Text="Логин (email)" HorizontalOptions="Start"/>
-            <Entry x:Name="loginEntry" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Entry x:Name="loginEntry" Completed="loginEntry_Completed" Keyboard="Email" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label x:Name="invalidLoginInput" HorizontalOptions="Start" FontSize="12" TextColor="Red"/>
             <Label Text="Пароль" HorizontalOptions="Start"/>
-            <Entry x:Name="passwordEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Entry x:Name="passwordEntry" IsPassword="True" Completed="passwordEntry_Completed" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label x:Name="invalidPasswordInput" HorizontalOptions="Start" FontSize="12" TextColor="Red"/>
             <Label Text="Подтвердите пароль" HorizontalOptions="Start"/>
-            <Entry x:Name="passwordRepeatEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Entry x:Name="passwordRepeatEntry" IsPassword="True" Completed="passwordRepeatEntry_Completed" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label x:Name="invalidPasswordRepeatInput" HorizontalOptions="Start" FontSize="12" TextColor="Red"/>
             <Label Text="Ваше имя" HorizontalOptions="Start"/>
-            <Entry x:Name="nameEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Entry x:Name="nameEntry" Completed="nameEntry_Completed" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label x:Name="invalidNameInput" HorizontalOptions="Start" FontSize="12" TextColor="Red"/>
             <Label Text="Выберите дату рождения" HorizontalOptions="Start"/>
-            <DatePicker  HorizontalOptions="FillAndExpand"/>
+            <DatePicker x:Name="datePicker" DateSelected="datePicker_DateSelected" HorizontalOptions="FillAndExpand"/>
+            <Label x:Name="invalidDateInput" HorizontalOptions="Start" FontSize="12" TextColor="Red"/>
+            <Button Text="Зарегистрироваться" Clicked="MakeProfileButton_Clicked"  VerticalOptions="Center" Margin="0,20,0,0"/>
             
-            <Button Text="Войти"  VerticalOptions="Center" Margin="0,20,0,0"/>
-            <Grid Padding="0,20">
-                <StackLayout Orientation="Horizontal">
-                    <CheckBox/>
-                    <Label Text="Запомнить меня" HorizontalOptions="Start" VerticalOptions="Center"/>
-                </StackLayout>
-                <Button Text="Регистрация" VerticalOptions="Center" HorizontalOptions="End"/>
-            </Grid>
         </StackLayout>
     </ScrollView>
 </ContentPage>
