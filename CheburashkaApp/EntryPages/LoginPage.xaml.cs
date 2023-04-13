@@ -2,6 +2,7 @@ namespace CheburashkaApp;
 
 public partial class LoginPage : ContentPage
 {
+
 	public LoginPage()
 	{
 		InitializeComponent();
@@ -9,8 +10,10 @@ public partial class LoginPage : ContentPage
 
     private void EnterButton_Clicked(object sender, EventArgs e)
     {
-        //добавить проверку на корректность логина/пароля
-        Navigation.PopAsync();
+        if (CheckLogin.CheckInServer(loginEntry.Text, passwordEntry.Text))
+        {
+            Navigation.PopAsync();
+        }
     }
     protected override bool OnBackButtonPressed()
     {
@@ -19,6 +22,6 @@ public partial class LoginPage : ContentPage
 
     private void RegistrationButton_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new RegistrationPage());
     }
 }

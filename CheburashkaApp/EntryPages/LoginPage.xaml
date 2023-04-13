@@ -15,10 +15,10 @@
             VerticalOptions="Center" 
             HorizontalOptions="Start"
             Padding="0,20"/>
-        <Label Text="Логин" HorizontalOptions="Start"/>
-        <Entry HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+        <Label Text="Логин (email)" HorizontalOptions="Start"/>
+        <Entry x:Name="loginEntry" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
         <Label Text="Пароль" HorizontalOptions="Start"/>
-        <Entry IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+        <Entry x:Name="passwordEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
         <Button Text="Войти" Clicked="EnterButton_Clicked" VerticalOptions="Center" Margin="0,20,0,0"/>
         <Grid Padding="0,20">
             <StackLayout Orientation="Horizontal">

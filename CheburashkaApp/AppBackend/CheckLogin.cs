@@ -10,7 +10,11 @@ namespace CheburashkaApp
     {
         public static bool CheckInSystem()
         {
-            return false;
+            return false;  //надо сделать
+        }
+        public static bool CheckInServer(string login,string password)
+        {
+            return true;    //надо сделать
         }
     }
 }

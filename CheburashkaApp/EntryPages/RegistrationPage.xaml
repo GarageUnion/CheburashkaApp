@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheburashkaApp.RegistrationPage"
+             Title="RegistrationPage"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="25" Padding="0,0,0,100">
+            <Label 
+                Text="Регистрация"
+                FontSize="20"
+                FontAttributes="Bold"
+                FontFamily="OpenSans-Semibold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                Padding="0,20"/>
+            <Label Text="Логин (email)" HorizontalOptions="Start"/>
+            <Entry x:Name="loginEntry" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label Text="Пароль" HorizontalOptions="Start"/>
+            <Entry x:Name="passwordEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label Text="Подтвердите пароль" HorizontalOptions="Start"/>
+            <Entry x:Name="passwordRepeatEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label Text="Ваше имя" HorizontalOptions="Start"/>
+            <Entry x:Name="nameEntry" IsPassword="True" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand" MinimumWidthRequest="300" MaximumWidthRequest="300"/>
+            <Label Text="Выберите дату рождения" HorizontalOptions="Start"/>
+            <DatePicker  HorizontalOptions="FillAndExpand"/>
+            
+            <Button Text="Войти"  VerticalOptions="Center" Margin="0,20,0,0"/>
+            <Grid Padding="0,20">
+                <StackLayout Orientation="Horizontal">
+                    <CheckBox/>
+                    <Label Text="Запомнить меня" HorizontalOptions="Start" VerticalOptions="Center"/>
+                </StackLayout>
+                <Button Text="Регистрация" VerticalOptions="Center" HorizontalOptions="End"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

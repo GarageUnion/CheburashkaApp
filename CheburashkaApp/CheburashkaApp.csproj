@@ -70,24 +70,28 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="LoginPage.xaml">
+	  <MauiXaml Update="EntryPages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MyFansPage.xaml">
+	  <MauiXaml Update="MainPages\MyFriendsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MyFriendsPage.xaml">
+	  <MauiXaml Update="MainPages\MyProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MyProfilePage.xaml">
+	  <MauiXaml Update="EntryPages\RegistrationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SearchPage.xaml">
+	  <MauiXaml Update="MainPages\SearchPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="SearchSettingsPage.xaml">
+	  <MauiXaml Update="SettingsPages\SearchSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ServerConnections\" />
 	</ItemGroup>
 
 </Project>
