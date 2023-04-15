@@ -6,7 +6,7 @@
              Shell.TabBarIsVisible="False">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to settings"
+            Text="Welcome to search settings"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>

@@ -58,6 +58,7 @@
 	  <None Remove="Resources\Images\filter_icon.svg" />
 	  <None Remove="Resources\Images\gear.svg" />
 	  <None Remove="Resources\Images\list_icon.svg" />
+	  <None Remove="Resources\Images\logout_icon.svg" />
 	  <None Remove="Resources\Images\searchfilter_icon.svg" />
 	  <None Remove="Resources\Images\search_icon.svg" />
 	  <None Remove="Resources\Images\settings_icon.svg" />
