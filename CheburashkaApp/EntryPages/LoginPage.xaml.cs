@@ -1,3 +1,4 @@
+
 using System.Xml;
 
 namespace CheburashkaApp;
@@ -14,6 +15,15 @@ public partial class LoginPage : ContentPage
     {
         if (CheckLogin.CheckInServer(loginEntry.Text, passwordEntry.Text))
         {
+            var userIO = new UserDataIO();
+            if (RememberMeCheckBox.IsChecked == true)
+            {
+                userIO.WriteToFile(Encryptor.Encrypt(loginEntry.Text,passwordEntry.Text));
+            }
+            else
+            {
+                userIO.DeleteFile();
+            }
             Navigation.PopAsync();
         }
         else
