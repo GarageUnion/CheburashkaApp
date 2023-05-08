@@ -6,10 +6,33 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem IconImageSource="logout_icon" Clicked="LogoutButton_Clicked" />
     </ContentPage.ToolbarItems>
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to profile page"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="30"
+                             Spacing="1000">
+            <VerticalStackLayout Padding="20">
+                <Image
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    Source="https://ih1.redbubble.net/image.1059732353.4735/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+                />  
+                <Label
+                    Text="Имя Фамилия"
+                    HorizontalOptions="Center"
+                    FontSize="20"
+                />
+            </VerticalStackLayout >
+            <VerticalStackLayout>
+                <Label
+               
+                    Text="Поздравляю вы нашли Чежика"
+                    HorizontalOptions="Center"
+                />
+                <Image
+                    WidthRequest="200"
+                    HeightRequest="200"
+                    Source="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fd32fa47740761.588371e17dd59.jpg"
+                />
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
