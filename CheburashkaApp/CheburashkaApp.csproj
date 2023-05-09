@@ -77,10 +77,13 @@
 	  <MauiXaml Update="MainPages\MyFriendsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="MainPages\MyProfilePage.xaml">
+	  <MauiXaml Update="MainPages\MyProfilePage\MyProfilePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="EntryPages\RegistrationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="MainPages\MyProfilePage\MyProfileSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="MainPages\SearchPage.xaml">
@@ -93,6 +96,12 @@
 
 	<ItemGroup>
 	  <Folder Include="ServerConnections\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="MainPages\MyProfilePage\MyProfileSettingsPage.xaml.cs">
+	    <DependentUpon>MyProfileSettingsPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

@@ -7,8 +7,7 @@
         <ToolbarItem IconImageSource="logout_icon" Clicked="LogoutButton_Clicked" />
     </ContentPage.ToolbarItems>
     <ScrollView>
-        <VerticalStackLayout Padding="30"
-                             Spacing="1000">
+        <StackLayout Spacing="20">
             <VerticalStackLayout Padding="20">
                 <Image
                     WidthRequest="200"
@@ -16,23 +15,37 @@
                     Source="https://ih1.redbubble.net/image.1059732353.4735/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
                 />  
                 <Label
-                    Text="Имя Фамилия"
+                    Text="Имя"
                     HorizontalOptions="Center"
+                    FontSize="35"
+                />
+                
+            </VerticalStackLayout >
+            
+            <Button Text="Редактировать профиль"
+                    WidthRequest="300"
+                    Clicked="MyProfileSettingsButton_Clicked"/>
+
+            <VerticalStackLayout Spacing="10" 
+                                 Padding="20">
+                
+                <Label
+                    Text="Место жительства"
                     FontSize="20"
                 />
-            </VerticalStackLayout >
-            <VerticalStackLayout>
                 <Label
-               
-                    Text="Поздравляю вы нашли Чежика"
-                    HorizontalOptions="Center"
+                    Text="Место работы/учебы"
+                    FontSize="20"
                 />
-                <Image
-                    WidthRequest="200"
-                    HeightRequest="200"
-                    Source="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fd32fa47740761.588371e17dd59.jpg"
+                <Label
+                    Text="Статус"
+                    FontSize="20"
+                />
+                <Label
+                    Text="Текст анкеты"
+                    FontSize="20"
                 />
             </VerticalStackLayout>
-        </VerticalStackLayout>
+        </StackLayout>
     </ScrollView>
 </ContentPage>
